@@ -1,7 +1,7 @@
 package com.sysdependency.service;
 
 /*
-Service Exception Class
+*Service Exception Class
 */
 public class ServiceException extends Exception {
 
