@@ -1,7 +1,6 @@
-package com.salesforce.rpt.dependency.service;
+package com.sysdependency.service;
 
-import com.salesforce.rpt.dependency.model.Program;
-
+import com.sysdependency.model.Program;
 import java.util.Set;
 
 public interface DependencyManager {
