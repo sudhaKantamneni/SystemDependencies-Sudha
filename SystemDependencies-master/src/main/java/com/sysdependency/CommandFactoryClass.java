@@ -42,7 +42,7 @@ public class CommandFactoryClass{
 
         InstallCommand installCommand = new InstallCommand();
         installCommand.setDependencyManager(dependencyManager);
-        factory.addCommand(ADD_COMMAND, installCommand);
+        factory.addCommand(INSTALL_COMMAND, installCommand);
 
         RemoveCommand removeCommand = new RemoveCommand();
         removeCommand.setDependencyManager(dependencyManager);
