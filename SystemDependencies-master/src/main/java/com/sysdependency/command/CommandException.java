@@ -1,7 +1,7 @@
 package com.sysdependency.command;
 
 public class CommandException extends Exception {
-
+File file = new File(".\\SystemDependencies-master\\src\\main\\resources\\input.txt"); 
     public CommandException() {
     }
 
