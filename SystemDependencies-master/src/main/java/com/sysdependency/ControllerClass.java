@@ -5,12 +5,15 @@ import com.sysdependency.command.CommandException;
 import java.io.File;
 import java.util.Scanner;
 
+/*
+Main class to run and get the output.
+*/
 public class ControllerClass {
 
     public static void main(String[] args) throws Exception {
 
-
-File file = new File("C:\\Users\\admin\\git\\SystemDependencies-Sudha\\SystemDependencies-master\\src\\main\\resources\\input.txt"); 
+//input File Path
+File file = new File(".\\SystemDependencies-master\\src\\main\\resources\\input.txt"); 
  
     		  
         InputParser parser = new InputParser();
