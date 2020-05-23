@@ -1,4 +1,4 @@
-package com.salesforce.rpt.dependency;
+package com.sysdependency;
 
 import com.sysdependency.command.CommandException;
 
