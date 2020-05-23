@@ -1,4 +1,4 @@
-package com.salesforce.rpt.dependency.service;
+package com.sysdependency.service;
 
 public class ServiceException extends Exception {
 
