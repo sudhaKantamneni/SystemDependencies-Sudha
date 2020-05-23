@@ -16,7 +16,7 @@ public class CommandFactoryClass{
 
     Map<String, Command> allcommands;
 
-    private CommandFactory() {
+    private CommandFactoryClass() {
         allcommands = new HashMap<>();
     }
 
@@ -32,17 +32,17 @@ public class CommandFactoryClass{
         return "Command not found!";
     }
 
-    public static CommandFactory init() {
-        CommandFactory factory = new CommandFactory();
+    public static CommandFactoryClass init() {
+    	CommandFactoryClass factory = new CommandFactoryClass();
         DependencyManager dependencyManager = new DependencyManagerImpl();
 
         DependCommand dependCommand = new DependCommand();
         dependCommand.setDependencyManager(dependencyManager);
         factory.addCommand(DEPEND_COMMAND, dependCommand);
 
-        AddCommand addCommand = new AddCommand();
-        addCommand.setDependencyManager(dependencyManager);
-        factory.addCommand(ADD_COMMAND, addCommand);
+        InstallCommand installCommand = new InstallCommand();
+        installCommand.setDependencyManager(dependencyManager);
+        factory.addCommand(ADD_COMMAND, installCommand);
 
         RemoveCommand removeCommand = new RemoveCommand();
         removeCommand.setDependencyManager(dependencyManager);
