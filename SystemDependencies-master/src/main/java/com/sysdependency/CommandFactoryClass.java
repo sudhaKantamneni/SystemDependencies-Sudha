@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class CommandFactoryClass{
    
-    public static final String ADD_COMMAND = "INSTALL";
+    public static final String INSTALL_COMMAND = "INSTALL";
     public static final String REMOVE_COMMAND = "REMOVE";
 	 public static final String DEPEND_COMMAND = "DEPEND";
     public static final String LIST_COMMAND = "LIST";
@@ -29,7 +29,7 @@ public class CommandFactoryClass{
         if (command != null) {
             return command.execute(args);
         }
-        return "Command not found!";
+        return null;
     }
 
     public static CommandFactoryClass init() {
