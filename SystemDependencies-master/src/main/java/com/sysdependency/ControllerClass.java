@@ -8,13 +8,14 @@ import java.util.Scanner;
 public class ControllerClass {
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            throw new Exception("Expected Syntax: Controller <input file>");
-        }
 
+
+File file = new File("C:\\Users\\admin\\git\\SystemDependencies-Sudha\\SystemDependencies-master\\src\\main\\resources\\input.txt"); 
+ 
+    		  
         InputParser parser = new InputParser();
         CommandFactoryClass commandFactory = CommandFactoryClass.init();
-        Scanner scanner = new Scanner(new File(args[0]));
+        Scanner scanner = new Scanner(file);
 
         while (scanner.hasNext()) {
             String line = scanner.nextLine();
@@ -31,6 +32,7 @@ public class ControllerClass {
         }
 
         scanner.close();
-    }
-
+        
+    	
+}
 }
